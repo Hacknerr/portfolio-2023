@@ -35,13 +35,13 @@ const About = () => {
                 </div>
                 <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                     <div className='sm:text-right text-4xl font-bold'>
-                        <h2>{age.toFixed(8)} y/o from Bærum, Norway. Bachelor in computer engineering from <Link href='https://www.ntnu.edu/' target="_blank">NTNU.</Link></h2>
+                        <h2>{age.toFixed(8)} y/o from Bærum, Norway. Bachelor in computer engineering from <a href='https://www.ntnu.edu/' target="_blank" rel="noopener noreferrer">NTNU.</a></h2>
                     </div>
                     <div>
-                        <p className='text-gray-600'>I'm passionate about building web applications that improves
+                        <p className='text-gray-600'>I am passionate about building web applications that improves
                             the lives of those around me. I specialize in creating user-friendly UI/UX designs
                             for clients ranging from individuals and small-businesses all the way to large enterprise
-                            corporations. I'm currently seeking new opportunities that align with my skill set.</p>
+                            corporations. I am currently seeking new opportunities that align with my skill set.</p>
                     </div>
                 </div>
             </div>
