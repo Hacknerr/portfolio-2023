@@ -54,7 +54,7 @@ const Navbar = () => {
         >
             <div className='flex justify-between items-center w-full h-full px-10 2xl:px-16'>
                 <Link href='/'>
-                        <h3 className='font-extrabold'>André.dev</h3>
+                        <h3>André.dev</h3>
                 </Link>
                 <div>
                     <ul style={{ color: `${linkColor}` }} className='hidden md:flex font-semibold'>
