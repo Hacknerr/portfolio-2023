@@ -2,26 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --primary: white;
+    --secondary: rgba(45, 46, 50, 0.88);
+    --tertiary: rgba(46, 47, 48, 0.72);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 14px;
+    border: 3px solid var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--tertiary);
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-[#f9f9f9] text-[#1f2937] tracking-wide
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold text-[#2d2e32]
+    }
+
+    h1 {
+        @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+    }
+
+    h2 {
+        @apply text-3xl sm:text-4xl
+    }
+
+    h3 {
+        @apply text-xl font-bold text-[#2d2e32]
+    }
+
+    li {
+        @apply cursor-pointer
+    }
 }
