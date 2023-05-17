@@ -53,8 +53,8 @@ const Navbar = () => {
             className='fixed w-full h-20 shadow-custom z-[100] ease-in-out duration-300'
         >
             <div className='flex justify-between items-center w-full h-full px-10 2xl:px-16'>
-                <Link href='/'>
-                        <h3>André.dev</h3>
+                <Link to="hero" spy={true} smooth={true} duration={500}>
+                    <h3 className='transition-transform hover:scale-110 cursor-pointer'>André.dev</h3>
                 </Link>
                 <div>
                     <ul style={{ color: `${linkColor}` }} className='hidden md:flex font-semibold'>
