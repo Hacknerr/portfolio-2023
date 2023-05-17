@@ -1,7 +1,6 @@
 "use client"; // This is a client component 👈🏽
 
 import React, {useEffect, useState} from 'react';
-import Link from "next/link";
 
 const About = () => {
     const [age, setAge] = useState(0);
