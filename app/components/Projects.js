@@ -23,18 +23,21 @@ const Projects = () => {
                         backgroundImg={portfolioImg}
                         projectUrl='/property'
                         tech='Next.js'
+                        comingSoon='true'
                     />
                     <ProjectItem
                         title='Portfolio 2020'
                         backgroundImg={oldPortfolioImg}
                         projectUrl='/property'
                         tech='React.js'
+                        comingSoon='true'
                     />
                     <ProjectItem
                         title='Marine Traffic Portal'
                         backgroundImg={marinetrafficImg}
                         projectUrl='/property'
                         tech='Python, React.js'
+                        comingSoon='true'
                     />
                     <ProjectItem
                         title='Netflix App'

@@ -1,4 +1,6 @@
-import {AiFillGithub, AiFillLinkedin, BsInstagram, BsSpotify} from "react-icons/all";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { BsInstagram, BsSpotify } from "react-icons/bs";
+
 import Link from "next/link";
 
 const Footer = () => {

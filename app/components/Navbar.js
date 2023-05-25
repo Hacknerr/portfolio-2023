@@ -5,8 +5,8 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import {BiMenuAltRight, IoClose} from "react-icons/all";
-// import { useRouter } from 'next/router';
+import { BiMenuAltRight } from "react-icons/bi";
+import { IoClose } from "react-icons/io5";
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -38,14 +38,17 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleShadow = () => {
-            if (window.scrollY >= 90) {
+            if (typeof window !== "undefined" && window.scrollY >= 90) {
                 setShadow(true);
             } else {
                 setShadow(false);
             }
         };
-        window.addEventListener('scroll', handleShadow);
+        if (typeof window !== "undefined") {
+            window.addEventListener('scroll', handleShadow);
+        }
     }, []);
+
 
     return (
         <div
