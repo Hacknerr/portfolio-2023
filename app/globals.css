@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -40,7 +40,8 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Raleway', sans-serif;
+    font-display: swap;
+    font-family: 'Poppins', sans-serif;
 }
 
 @layer base {
@@ -48,12 +49,12 @@ html {
         @apply bg-[#f9f9f9] text-[#1f2937] tracking-wide
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h4, h5, h6 {
         @apply font-bold text-[#2d2e32]
     }
 
     h1 {
-        @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+        @apply text-4xl sm:text-5xl md:text-6xl
     }
 
     h2 {
@@ -61,10 +62,13 @@ html {
     }
 
     h3 {
-        @apply text-xl font-bold text-[#2d2e32]
+        @apply text-xl text-[#2d2e32];
+        font-size: 1.25rem; /* Custom font size for h3 */
+        font-weight: bold;
     }
 
     li {
-        @apply cursor-pointer
+        @apply cursor-pointer;
+        font-size: 1.10rem;
     }
 }
